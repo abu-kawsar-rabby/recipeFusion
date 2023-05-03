@@ -49,7 +49,7 @@ const Login = () => {
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen">
             <div className="hero-content flex-col w-2/5">
 
                 <div className="card flex-shrink-0 w-full max-w-2xl shadow-2xl bg-base-100">
@@ -73,7 +73,7 @@ const Login = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn btn-success text-white">Login</button>
                         </div>
                         <div class="flex flex-col">
                             <div class="relative py-2">
@@ -83,15 +83,15 @@ const Login = () => {
                                     <span class="bg-white px-4 text-sm text-gray-500">Or</span>
                                 </div>
                             </div>
-                            <button onClick={handleGoogleSignIn} type="button" class="btn btn-outline btn-primary mb-4">
+                            <button onClick={handleGoogleSignIn} type="button" class="btn btn-outline btn-success mb-4 text-white">
                                 <span class="flex justify-center items-center"> 
-                                     <FaGoogle />
+                                     <FaGoogle /> 
                                     <span> Sign in with Google</span>
                                 </span>
                             </button>
-                            <button onClick={handleGithubSignIn} type="button" class="btn btn-outline btn-primary">
+                            <button onClick={handleGithubSignIn} type="button" class="btn btn-outline btn-success hover:text-white">
                                 <span class="flex justify-center items-center"> 
-                                     <FaGithub></FaGithub>
+                                     <FaGithub></FaGithub> 
                                     <span> Sign in with Github</span>
                                 </span>
                             </button>

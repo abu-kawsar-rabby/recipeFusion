@@ -10,10 +10,10 @@ const Header = () => {
     };
 
     return (
-        <nav className='flex flex-wrap items-center justify-between py-3'>
+        <nav className='flex flex-wrap items-center justify-between py-3 border-b'>
             <div className='flex items-center flex-shrink-0 mr-6'>
                 <a href="/">
-                    <h2 className='font-bold text-4xl text-black'>Recipe  <span className='text-primary'>Fusion</span></h2>
+                    <h2 className='font-extrabold text-3xl text-black'>Recipe<span className='text-success'>Fusion</span></h2>
                 </a>
             </div>
             <div className='block lg:hidden'>
@@ -34,9 +34,7 @@ const Header = () => {
                     </ActiveLink>
                 </div>
                 <div>
-                    <button className='btn btn-primary'>
-                        <Link to="/login">Login</Link>
-                    </button>
+                    <Link to="/login"><button className='btn btn-success text-white'>Login</button></Link>
                 </div>
             </div>
         </nav>

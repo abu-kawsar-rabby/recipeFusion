@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "chef_name": "Jane Doe",
+        "chef_picture": "https://i.ibb.co/LZNFZ2F/louis-hansel.jpg",
+        "years_of_experience": 10,
+        "num_of_recipes": 20,
+        "likes": 5000
+    },
+    {
+        "id": "2",
+        "chef_name": "John Smith",
+        "chef_picture": "https://i.ibb.co/zZHvqBG/miquel-ferran-gomez-figueroa.jpg",
+        "years_of_experience": 15,
+        "num_of_recipes": 50,
+        "likes": 10000
+    },
+    {
+        "id": "3",
+        "chef_name": "Emily Nguyen",
+        "chef_picture": "https://i.ibb.co/8gk2zM5/mohamed-nohassi.jpg",
+        "years_of_experience": 8,
+        "num_of_recipes": 30,
+        "likes": 7500
+    },
+    {
+        "id": "4",
+        "chef_name": "Michael Johnson",
+        "chef_picture": "https://i.ibb.co/XJt0KC3/petr-sevcovic.jpg",
+        "years_of_experience": 20,
+        "num_of_recipes": 100,
+        "likes": 20000
+    },
+    {
+        "id": "5",
+        "chef_name": "Olivia Davis",
+        "chef_picture": "https://i.ibb.co/ggH0jC6/rc-cf-FM.jpg",
+        "years_of_experience": 12,
+        "num_of_recipes": 40,
+        "likes": 8000
+    },
+    {
+        "id": "6",
+        "chef_name": "Steven Cleghor",
+        "chef_picture": "https://i.ibb.co/tPP0P4c/steven-cleghor.jpg",
+        "years_of_experience": 18,
+        "num_of_recipes": 80,
+        "likes": 15000
+    },
+    {
+        "id": "7",
+        "chef_name": "Sophia Martinez",
+        "chef_picture": "https://i.ibb.co/Rz50nYt/andrea-piacquadio.jpg",
+        "years_of_experience": 25,
+        "num_of_recipes": 10,
+        "likes": 2500
+    },
+    {
+        "id": "8",
+        "chef_name": "William Lee",
+        "chef_picture": "https://i.ibb.co/Db5WMxG/brooke-cagle.jpg",
+        "years_of_experience": 13,
+        "num_of_recipes": 60,
+        "likes": 9000
+    },
+    {
+        "id": "9",
+        "chef_name": "Ava Wilson",
+        "chef_picture": "https://i.ibb.co/N3vx5dZ/febrian-zakaria-Si-Qgni.jpg",
+        "years_of_experience": 7,
+        "num_of_recipes": 25,
+        "likes": 6000
+    },
+    {
+        "id": "10",
+        "chef_name": "James Brown",
+        "chef_picture": "https://i.ibb.co/r0QwNMK/derrick-pare.jpg",
+        "years_of_experience": 11,
+        "num_of_recipes": 35,
+        "likes": 8500
+    }
+]

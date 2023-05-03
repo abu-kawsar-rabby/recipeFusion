@@ -4,6 +4,8 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Login/Register";
 import Blog from "../pages/Blog/blog";
 import Chefs from "../pages/Home/Chefs";
+import Home from "../pages/Home/Home";
+import RecipesDetails from "../pages/Recipes/RecipesDetails";
 
 const router = createBrowserRouter([
     {
@@ -11,13 +13,22 @@ const router = createBrowserRouter([
         element: <Main></Main>,
         children: [
             {
+                path: '/',
+                element: <Home></Home>,
+                loader: () => fetch("../../data/chefs.json")
+            },
+            {
                 path: 'blog',
                 element: <Blog></Blog>,
             },
             {
                 path: '/chefs',
                 element: <Chefs></Chefs>,
-                loader: () => fetch("https://chefs-abu-kawsar-rabby.vercel.app/chefs"),
+            },
+            {
+                path: '/chefs/:id',
+                element: <RecipesDetails></RecipesDetails>,
+                loader: ({params})=> fetch(`https://chefs-abu-kawsar-rabby.vercel.app/chefs/${params.id}`)
             },
             {
                 path: 'login',

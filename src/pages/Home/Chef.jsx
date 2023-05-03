@@ -1,17 +1,24 @@
 import React from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
-const Chef = () => {
+const Chef = ({ data }) => {
+    
+    const navigate = useNavigate();
+    const handleDetailsRecipes = (id) => {
+        navigate(`/chefs/${id}`);
+        console.log(id)
+    }
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <figure className="px-10 pt-10">
-                    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
+            <div className="card h-[30rem] bg-base-100 shadow-xl">
+                <figure className="">
+                    <img className="rounded-3xl p-5 h-60 w-[30rem]" src={data?.chef_picture} alt="Shoes" />
                 </figure>
                 <div className="card-body items-center text-center">
-                    <h2 className="card-title">Shoes!</h2>
+                    <h2 className="card-title">{data?.chef_name}</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <button onClick={() => handleDetailsRecipes(data.id)} className="btn btn-primary">View Recipe</button>
                     </div>
                 </div>
             </div>

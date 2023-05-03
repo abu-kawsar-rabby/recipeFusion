@@ -28,7 +28,7 @@ const Register = () => {
     }
 
     return (
-        <div className="hero h-screen bg-base-200">
+        <div className="hero h-screen">
             <div className="hero-content flex-col w-2/5">
 
                 <div className="card flex-shrink-0 w-full max-w-2xl  h-fit shadow-2xl bg-base-100">
@@ -65,7 +65,7 @@ const Register = () => {
                             </label>
                         </div>
                         <div className="form-control mt-3">
-                            <button className="btn btn-primary">Register</button>
+                            <button className="btn btn-success text-white">Register</button>
                         </div>
                     </form>
                 </div>
