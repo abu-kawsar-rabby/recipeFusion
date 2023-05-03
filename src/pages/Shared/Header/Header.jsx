@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ActiveLink from './ActiveLink/ActiveLink';
+import { AuthContext } from '../../../providers/AuthProviders';
 
 const Header = () => {
+
+    const { user } = useContext(AuthContext);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -34,7 +37,15 @@ const Header = () => {
                     </ActiveLink>
                 </div>
                 <div>
-                    <Link to="/login"><button className='btn btn-success text-white'>Login</button></Link>
+                    {
+                        user
+                            ? <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full">
+                                    <img src={user.photoURL} />
+                                </div>
+                            </label>
+                            : <Link to="/login"><button className='btn btn-success text-white'>Login</button></Link>
+                    }
                 </div>
             </div>
         </nav>
