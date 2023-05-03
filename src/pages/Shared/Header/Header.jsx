@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ActiveLink from './ActiveLink/ActiveLink';
 import { AuthContext } from '../../../providers/AuthProviders';
+import { Tooltip } from 'react-tooltip';
 
 const Header = () => {
 
@@ -40,8 +41,10 @@ const Header = () => {
                     {
                         user
                             ? <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                <div className="w-10 rounded-full">
+                                <div data-tooltip-id="tooltip"
+                                    data-tooltip-content={user.displayName} className="w-10 rounded-full">
                                     <img src={user.photoURL} />
+                                    <Tooltip id='tooltip' />
                                 </div>
                             </label>
                             : <Link to="/login"><button className='btn btn-success text-white'>Login</button></Link>

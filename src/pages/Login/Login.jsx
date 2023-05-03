@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProviders';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 
 const Login = () => {
@@ -21,9 +22,11 @@ const Login = () => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
                 form.reset();
+                toast.success("Login Successfull");
             })
             .catch(error => {
                 console.log(error)
+                toast.error('Anything Wrong')
             })
     }
 
@@ -32,6 +35,7 @@ const Login = () => {
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
+                toast.success("Login Successfull With Your Gmail")
             })
             .catch(error => {
                 console.log(error)
@@ -42,6 +46,7 @@ const Login = () => {
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
+                toast.success("Login Successfull With Your Github Account")
             })
             .catch(error => {
                 console.log(error)
@@ -84,14 +89,14 @@ const Login = () => {
                                 </div>
                             </div>
                             <button onClick={handleGoogleSignIn} type="button" className="btn btn-outline btn-success mb-4 text-white">
-                                <span className="flex justify-center items-center"> 
-                                     <FaGoogle /> 
+                                <span className="flex justify-center items-center">
+                                    <FaGoogle />
                                     <span> Sign in with Google</span>
                                 </span>
                             </button>
                             <button onClick={handleGithubSignIn} type="button" className="btn btn-outline btn-success hover:text-white">
-                                <span className="flex justify-center items-center"> 
-                                     <FaGithub></FaGithub> 
+                                <span className="flex justify-center items-center">
+                                    <FaGithub></FaGithub>
                                     <span> Sign in with Github</span>
                                 </span>
                             </button>

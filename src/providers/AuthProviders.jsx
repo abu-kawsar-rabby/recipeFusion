@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import app from '../firebase/firebase.config';
+import { toast } from 'react-toastify';
 
 export const AuthContext = createContext(null);
 
@@ -13,6 +14,20 @@ const AuthProviders = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
     const createUser = (email, password) => {
+
+        //validate
+        if (!/(?=.*[A-Z])/.test(password)) {
+            toast.error('Please add at least one uppercase')
+            return;
+        }
+        else if (!/(?=.*[0-9].*[0-9])/.test(password)) {
+            toast.error('Please add two number')
+            return;
+        }
+        else if (password.length < 6) {
+            toast.error('Please add six digit number')
+            return;
+        }
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
