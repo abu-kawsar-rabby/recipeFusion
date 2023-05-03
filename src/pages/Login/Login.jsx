@@ -75,22 +75,22 @@ const Login = () => {
                         <div className="form-control mt-6">
                             <button className="btn btn-success text-white">Login</button>
                         </div>
-                        <div class="flex flex-col">
-                            <div class="relative py-2">
-                                <div class="absolute inset-0 flex items-center"><div class="w-full border-b border-gray-300"></div>
+                        <div className="flex flex-col">
+                            <div className="relative py-2">
+                                <div className="absolute inset-0 flex items-center"><div className="w-full border-b border-gray-300"></div>
                                 </div>
-                                <div class="relative flex justify-center">
-                                    <span class="bg-white px-4 text-sm text-gray-500">Or</span>
+                                <div className="relative flex justify-center">
+                                    <span className="bg-white px-4 text-sm text-gray-500">Or</span>
                                 </div>
                             </div>
-                            <button onClick={handleGoogleSignIn} type="button" class="btn btn-outline btn-success mb-4 text-white">
-                                <span class="flex justify-center items-center"> 
+                            <button onClick={handleGoogleSignIn} type="button" className="btn btn-outline btn-success mb-4 text-white">
+                                <span className="flex justify-center items-center"> 
                                      <FaGoogle /> 
                                     <span> Sign in with Google</span>
                                 </span>
                             </button>
-                            <button onClick={handleGithubSignIn} type="button" class="btn btn-outline btn-success hover:text-white">
-                                <span class="flex justify-center items-center"> 
+                            <button onClick={handleGithubSignIn} type="button" className="btn btn-outline btn-success hover:text-white">
+                                <span className="flex justify-center items-center"> 
                                      <FaGithub></FaGithub> 
                                     <span> Sign in with Github</span>
                                 </span>

@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProviders';
+import { updateProfile } from 'firebase/auth';
+import { toast } from 'react-toastify';
 
 const Register = () => {
 
@@ -21,9 +23,25 @@ const Register = () => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
                 form.reset();
+                updateUserData(loggedUser, name, ImageURL);
+                toast.success('Registration Successfull');
             })
             .catch(error => {
                 console.log(error)
+                toast.error('Registration failed');
+            })
+    }
+
+    const updateUserData = (user, name, photoUrl) => {
+        updateProfile(user, {
+            displayName: name,
+            photoURL: photoUrl
+        })
+            .then(() => {
+                toast("photoURL & name updated")
+            })
+            .catch(error => {
+                console.log(error.message)
             })
     }
 
