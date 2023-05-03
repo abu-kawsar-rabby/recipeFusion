@@ -18,7 +18,7 @@ const Chef = ({ data }) => {
                     <h2 className="card-title">{data?.chef_name}</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <div className="card-actions">
-                        <button onClick={() => handleDetailsRecipes(data.id)} className="btn btn-primary">View Recipe</button>
+                        <button onClick={() => handleDetailsRecipes(data.id)} className="btn btn-success">View Recipe</button>
                     </div>
                 </div>
             </div>
