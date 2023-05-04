@@ -7,6 +7,7 @@ import Chefs from "../pages/Home/Chefs";
 import Home from "../pages/Home/Home";
 import RecipesDetails from "../pages/Recipes/RecipesDetails";
 import ErrorPage from "../pages/Shared/ErrorPage/ErrorPage";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/chefs/:id',
-                element: <RecipesDetails></RecipesDetails>,
+                element: <PrivateRoute><Blog></Blog></PrivateRoute>,
                 loader: ({ params }) => fetch(`https://chefs-abu-kawsar-rabby.vercel.app/chefs/${params.id}`)
             },
             {
