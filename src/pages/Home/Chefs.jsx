@@ -11,9 +11,9 @@ const Chefs = () => {
             <p className='font-medium text-center mb-5'> <small>Discover the world's most renowned chefs and their signature dishes.</small></p>
             <div className="grid gap-10 grid-cols-3">
                 {
-                    datas.slice(0, 6).map(data =>
+                    datas.map(data =>
                         <Chef
-                            key={data.id}
+                            key={data.chef_id}
                             data={data}
                         ></Chef>)
                 }

@@ -38,7 +38,7 @@ const Register = () => {
             photoURL: photoUrl
         })
             .then(() => {
-                toast("photoURL & name updated")
+                console.log("photoURL & name updated")
             })
             .catch(error => {
                 console.log(error.message)

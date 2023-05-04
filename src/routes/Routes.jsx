@@ -15,7 +15,7 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch("../../data/chefs.json")
+                loader: () => fetch("https://chefs-abu-kawsar-rabby.vercel.app/")
             },
             {
                 path: 'blog',
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             {
                 path: '/chefs/:id',
                 element: <RecipesDetails></RecipesDetails>,
-                loader: ({params})=> fetch(`https://chefs-abu-kawsar-rabby.vercel.app/chefs/${params.id}`)
+                loader: ({ params }) => fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=5277${params.id}`)
             },
             {
                 path: 'login',
