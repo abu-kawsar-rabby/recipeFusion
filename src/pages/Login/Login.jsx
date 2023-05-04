@@ -1,13 +1,14 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProviders';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
-
 const Login = () => {
 
     const { signIn, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleLogin = event => {
         event.preventDefault();
@@ -15,43 +16,52 @@ const Login = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+
+        const from = location.state?.from || '/';
 
         signIn(email, password)
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
                 form.reset();
+                navigate(from, { replace: true });
                 toast.success("Login Successfull");
             })
             .catch(error => {
-                console.log(error)
-                toast.error('Anything Wrong')
-            })
-    }
+                console.log(error);
+                toast.error('Something went wrong. Please try again later.');
+            });
+    };
 
     const handleGoogleSignIn = () => {
+        const from = location.state?.from || '/';
+
         signInWithGoogle()
             .then(result => {
                 const loggedUser = result.user;
-                console.log(loggedUser);
-                toast.success("Login Successfull With Your Gmail")
+                navigate(from, { replace: true });
+                toast.success("Login Successfull With Your Gmail");
             })
             .catch(error => {
-                console.log(error)
-            })
-    }
+                console.log(error);
+                toast.error('Something went wrong. Please try again later.');
+            });
+    };
+
     const handleGithubSignIn = () => {
+        const from = location.state?.from || '/';
+
         signInWithGithub()
             .then(result => {
                 const loggedUser = result.user;
-                console.log(loggedUser);
-                toast.success("Login Successfull With Your Github Account")
+                navigate(from, { replace: true });
+                toast.success("Login Successfull With Your Github Account");
             })
             .catch(error => {
-                console.log(error)
-            })
-    }
+                console.log(error);
+                toast.error('Something went wrong. Please try again later.');
+            });
+    };
 
     return (
         <div className="hero min-h-screen">
