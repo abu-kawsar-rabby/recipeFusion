@@ -4,11 +4,14 @@ A recipe website is a platform that provides users with various recipes and cook
 
 ## Live Site Link:
 link-1 : https://recipe-fusion.web.app
+
 link-2 : https://recipe-fusion.firebaseapp.com
 
 ## Features
 
 - HomePage
+- Most Popular Chef
+- Most Popular Recipe
 - Blog
 - Login 
 - Registration 
