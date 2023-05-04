@@ -6,7 +6,7 @@ import { Tooltip } from 'react-tooltip';
 
 const Header = () => {
 
-    const { user } = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -40,13 +40,18 @@ const Header = () => {
                 <div>
                     {
                         user
-                            ? <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                <div data-tooltip-id="tooltip"
-                                    data-tooltip-content={user.displayName} className="w-10 rounded-full">
-                                    <img src={user.photoURL} />
-                                    <Tooltip id='tooltip' />
-                                </div>
-                            </label>
+                            ? <div className='flex'>
+
+                                <button onClick={logOut} className='btn btn-success text-white'>LogOut</button>
+
+                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                    <div data-tooltip-id="tooltip"
+                                        data-tooltip-content={user.displayName} className="w-10 rounded-full">
+                                        <img src={user.photoURL} />
+                                        <Tooltip id='tooltip' />
+                                    </div>
+                                </label>
+                            </div>
                             : <Link to="/login"><button className='btn btn-success text-white'>Login</button></Link>
                     }
                 </div>

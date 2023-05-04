@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 
 const Login = () => {
 
-    const { signIn, signInWithGoogle } = useContext(AuthContext);
+    const { signIn, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
 
     const handleLogin = event => {
         event.preventDefault();
