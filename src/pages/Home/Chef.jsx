@@ -15,9 +15,11 @@ const Chef = ({ data }) => {
                 </figure>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{data?.chef_name}</h2>
-                    <p>{data?.recipes[0]?.instructions[0]}</p>
+                    <p>Experience: {data?.years_of_experience}</p>
+                    <p>Recipe: {data?.num_of_recipes}</p>
+                    <p>Likes: {data?.likes}</p>
                     <div className="card-actions">
-                        <button onClick={() => handleDetailsRecipes(data?.chef_id)} className="btn btn-success">View Recipe</button>
+                        <button onClick={() => handleDetailsRecipes(data?.chef_id)} className="btn btn-success">View Recipes</button>
                     </div>
                 </div>
             </div>
