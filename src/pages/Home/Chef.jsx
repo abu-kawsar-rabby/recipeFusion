@@ -15,7 +15,7 @@ const Chef = ({ data }) => {
                 </figure>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{data?.chef_name}</h2>
-                    <p>{data.recipes[0].instructions[0]}</p>
+                    <p>{data?.recipes[0]?.instructions[0]}</p>
                     <div className="card-actions">
                         <button onClick={() => handleDetailsRecipes(data?.chef_id)} className="btn btn-success">View Recipe</button>
                     </div>
