@@ -1,18 +1,19 @@
 # RecipeFusion
 
-These websites typically allow users to search and apply for jobs based on different criteria such as job title, industry, location, and experience level.
+A recipe website is a platform that provides users with various recipes and cooking instructions. Users can browse recipes by ingredient, cuisine, or dietary requirements and can save and organize their favorite recipes. Some recipe websites also offer features such as meal planning, grocery list creation, and cooking tips and techniques. These websites aim to inspire and educate users on cooking and provide a convenient way to discover and share recipes..
 
 ## Live Site Link:
-link-1 : https://recipe-fusion.web.app/
-link-2 : https://recipe-fusion.firebaseapp.com/
+link-1 : https://recipe-fusion.web.app
+
+link-2 : https://recipe-fusion.firebaseapp.com
 
 ## Features
 
-- Statistic page
+- HomePage
 - Blog
-- Applied job
-- job details page 
-- job category
+- Login 
+- Registration 
+
   
 
 ## Installation
