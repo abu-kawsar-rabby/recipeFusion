@@ -1,0 +1,296 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 2838
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 16 Tf
+18.3999999999999986 TL
+0 g
+28.3464566929133888 813.5435433070865656 Td
+(Questions and Answers:) Tj
+ET
+BT
+/F1 12 Tf
+13.7999999999999989 TL
+0 g
+28.3464566929133888 -915.5903149606300531 Td
+(1.Differences between Uncontrolled and Controlled Components in React?) Tj
+ET
+BT
+/F1 12 Tf
+13.7999999999999989 TL
+0 g
+28.3464566929133888 -943.9367716535435875 Td
+(Ans: Uncontrolled components in React are form elements that maintain their own internal state. The state is managed by the browser, not by React, and accessed through the DOM. Controlled components, on the other hand, are form elements whose state is controlled by React. The values of these elements are stored in state and updated through setState\(\) or other state management techniques.) Tj
+ET
+BT
+/F1 12 Tf
+13.7999999999999989 TL
+0 g
+28.3464566929133888 -972.2832283464568945 Td
+(2.How to Validate React Props using PropTypes?) Tj
+ET
+BT
+/F1 12 Tf
+13.7999999999999989 TL
+0 g
+28.3464566929133888 -1000.6296850393702016 Td
+(Ans: PropTypes is a built-in feature in React that enables you to check the type of props passed to a component. To use PropTypes, you need to import it from the 'prop-types' package and define a propTypes object in your component. This object will define the expected types of your props, which React will validate at runtime.) Tj
+ET
+BT
+/F1 12 Tf
+13.7999999999999989 TL
+0 g
+28.3464566929133888 -1028.9761417322838497 Td
+(3.Difference between Node.js and Express.js?) Tj
+ET
+BT
+/F1 12 Tf
+13.7999999999999989 TL
+0 g
+28.3464566929133888 -1057.3225984251971568 Td
+(Ans: Node.js is a server-side JavaScript runtime that allows developers to run JavaScript on the server. It provides a platform for building scalable, high-performance web applications. Express.js, on the other hand, is a lightweight web application framework that runs on top of Node.js. It provides a set of tools and features that make it easy to build web applications and APIs.) Tj
+ET
+BT
+/F1 12 Tf
+13.7999999999999989 TL
+0 g
+28.3464566929133888 -1085.6690551181104638 Td
+(4.What is a Custom Hook, and Why will you create a Custom Hook?) Tj
+ET
+BT
+/F1 12 Tf
+13.7999999999999989 TL
+0 g
+28.3464566929133888 -1114.0155118110237709 Td
+(Ans: A custom hook in React is a JavaScript function that allows you to reuse logic across different components. It is a way to extract stateful logic from a component and reuse it in other components. Custom hooks are created using the 'use' prefix, such as 'useFetch' or 'useLocalStorage'. You might create a custom hook when you find yourself repeating the same code in different components, or when you want to share functionality between unrelated components. Custom hooks can also make your code more readable and maintainable by abstracting away complex logic and reducing the amount of code in your components.) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 2.5.1)
+/CreationDate (D:20230505221032+06'00')
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000003042 00000 n 
+0000004859 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000003099 00000 n 
+0000003224 00000 n 
+0000003354 00000 n 
+0000003487 00000 n 
+0000003624 00000 n 
+0000003747 00000 n 
+0000003876 00000 n 
+0000004008 00000 n 
+0000004144 00000 n 
+0000004272 00000 n 
+0000004399 00000 n 
+0000004528 00000 n 
+0000004661 00000 n 
+0000004763 00000 n 
+0000005107 00000 n 
+0000005193 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID [ <05B61D2C2652064C193004D6FA3D603B> <05B61D2C2652064C193004D6FA3D603B> ]
+>>
+startxref
+5297
+%%EOF

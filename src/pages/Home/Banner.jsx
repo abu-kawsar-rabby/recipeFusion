@@ -3,7 +3,7 @@ import meat from './../../assets/meat.png'
 
 const Banner = () => {
     return (
-        <div className='flex justify-between'>
+        <div className='md:flex md:justify-between'>
             <div className="flex justify-center items-center">
                 <div>
                     <h1 className='text-5xl font-bold leading-normal'>Let's Start

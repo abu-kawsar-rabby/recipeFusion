@@ -9,8 +9,8 @@ const Subcription = () => {
                     <h1 className='text-white text-center text-3xl font-bold py-6'>Subscribe to get Weekly
                         <br /> recipe updates
                     </h1>
-                    <div className="py-2 px-5 bg-white rounded-xl mb-2">
-                        <input className='py-3 px-10 rounded-xl' type="email" name="" id="" />
+                    <div className="md:py-2 px-5 bg-white rounded-xl mb-2">
+                        <input className='md:py-3 px-10 rounded-xl' type="email" name="" id="" />
                         <Link className='' to="/login"><button className='btn btn-success text-white'>Subcribe</button></Link>
                     </div>
                 </div>

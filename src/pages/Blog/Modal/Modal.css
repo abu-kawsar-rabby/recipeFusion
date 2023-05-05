@@ -1,0 +1,47 @@
+.modal {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-box {
+    background-color: white;
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.modal-box img {
+    max-height: 60%;
+    max-width: 100%;
+}
+
+.ingredients-and-instructions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ingredients-and-instructions ul {
+    flex: 1 1 50%;
+}
+
+.ingredients-and-instructions h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.modal-close {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}

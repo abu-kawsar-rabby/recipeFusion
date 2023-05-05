@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Main = () => {
     return (
         <div>
-            <div className="mx-28">
+            <div className="px-5 md:mx-28">
                 <Header></Header>
                 <ToastContainer />
                 <Outlet></Outlet>

@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import ActiveLink from './ActiveLink/ActiveLink';
 import { AuthContext } from '../../../providers/AuthProviders';
 import { Tooltip } from 'react-tooltip';
+import ActiveLink from '../../../ActiveLink/ActiveLink';
 
 const Header = () => {
 
@@ -37,7 +37,7 @@ const Header = () => {
                         Register
                     </ActiveLink>
                 </div>
-                <div>
+                <div className='flex justify-center items-center'>
                     {
                         user
                             ? <div className='flex'>

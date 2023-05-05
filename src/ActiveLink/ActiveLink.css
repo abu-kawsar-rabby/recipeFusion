@@ -1,0 +1,6 @@
+.active {
+    border-radius: 10px;
+    padding: 10px;
+    color: hsl(var(--su));
+    border-bottom: 1px solid hsl(var(--su));
+}
